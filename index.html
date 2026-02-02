@@ -1,291 +1,0 @@
-<!doctype html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>دیابت یار | مدیریت قند و انسولین</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-</head>
-<body>
-  <header class="app-header">
-    <div class="brand">
-      <div class="logo">💚</div>
-      <div class="title">
-        <h1>دیابت‌یار</h1>
-        <p>ثبت قند، انسولین، تغذیه + داشبورد و هشدارهای ایمنی</p>
-      </div>
-    </div>
-    <div class="header-actions">
-      <button id="btn-seed" class="btn btn-ghost" title="دیتای نمونه برای جان گرفتن داشبورد">📥 دیتای نمونه</button>
-      <button id="btn-export" class="btn btn-ghost" title="خروجی گرفتن از داده‌ها">⬇️ خروجی JSON</button>
-      <label class="btn btn-ghost" title="ورودی گرفتن از فایل JSON">
-        ⬆️ ورودی JSON
-        <input id="file-import" type="file" accept="application/json" hidden />
-      </label>
-      <button id="btn-reset" class="btn btn-danger" title="پاک کردن همه داده‌ها">🗑️ ریست</button>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="grid">
-      <div class="card">
-        <h2>👤 پروفایل</h2>
-        <form id="profile-form" class="form">
-          <div class="row">
-            <label>واحد</label>
-            <select name="unit">
-              <option value="mg/dL" selected>mg/dL</option>
-              <option value="mmol/L">mmol/L</option>
-            </select>
-          </div>
-          <div class="row">
-            <label>نوع</label>
-            <select name="diabetesType">
-              <option value="Type 1" selected>Type 1</option>
-              <option value="Type 2">Type 2</option>
-              <option value="GDM">بارداری (GDM)</option>
-              <option value="Other">سایر</option>
-            </select>
-          </div>
-          <div class="row">
-            <label>هدف قند پایین</label>
-            <input name="targetLow" type="number" min="40" max="200" value="80" />
-          </div>
-          <div class="row">
-            <label>هدف قند بالا</label>
-            <input name="targetHigh" type="number" min="80" max="400" value="180" />
-          </div>
-          <button class="btn btn-primary" type="submit">ذخیره پروفایل</button>
-        </form>
-      </div>
-
-      <div class="card">
-        <h2>🩸 ثبت قند</h2>
-        <form id="glucose-form" class="form">
-          <div class="row">
-            <label>تاریخ</label>
-            <input name="date" type="date" />
-          </div>
-          <div class="row">
-            <label>زمان/حالت</label>
-            <select name="slot">
-              <option value="FBS">FBS (ناشتا)</option>
-              <option value="AfterBreakfast2h">۲ ساعت بعد صبحانه</option>
-              <option value="BeforeLunch">قبل ناهار</option>
-              <option value="AfterLunch2h">۲ ساعت بعد ناهار</option>
-              <option value="BeforeDinner">قبل شام</option>
-              <option value="AfterDinner2h">۲ ساعت بعد شام</option>
-              <option value="BeforeBed">قبل خواب</option>
-            </select>
-          </div>
-          <div class="row">
-            <label>عدد قند</label>
-            <input name="value" type="number" min="20" max="600" required placeholder="مثلاً 145" />
-          </div>
-          <div class="row">
-            <label>یادداشت (اختیاری)</label>
-            <input name="note" type="text" placeholder="مثلاً استرس امتحان، ورزش، تب..." />
-          </div>
-          <button class="btn btn-primary" type="submit">ثبت قند</button>
-          <p class="hint">✅ هشدار: کمتر از 70 = هیپو / بالاتر از 300 = هایپر شدید</p>
-        </form>
-
-        <div id="alert-box" class="alert" hidden></div>
-      </div>
-
-      <div class="card">
-        <h2>💉 ثبت انسولین</h2>
-        <form id="insulin-form" class="form">
-          <div class="row">
-            <label>تاریخ</label>
-            <input name="date" type="date" />
-          </div>
-          <div class="row">
-            <label>نوع</label>
-            <select name="kind">
-              <option value="Basal">Basal (طولانی اثر)</option>
-              <option value="Bolus">Bolus (کوتاه اثر)</option>
-              <option value="Correction">Correction (اصلاحی)</option>
-            </select>
-          </div>
-          <div class="row">
-            <label>نام انسولین</label>
-            <input name="name" type="text" placeholder="مثلاً Lantus یا Novorapid" required />
-          </div>
-          <div class="row">
-            <label>مقدار (واحد)</label>
-            <input name="units" type="number" min="0" max="100" step="0.5" required placeholder="مثلاً 16" />
-          </div>
-          <div class="row">
-            <label>ساعت (اختیاری)</label>
-            <input name="time" type="time" />
-          </div>
-          <div class="row">
-            <label>وعده (اختیاری)</label>
-            <select name="mealRef">
-              <option value="">—</option>
-              <option value="Breakfast">صبحانه</option>
-              <option value="Lunch">ناهار</option>
-              <option value="Dinner">شام</option>
-            </select>
-          </div>
-          <div class="row">
-            <label>یادآور Basal</label>
-            <div class="inline">
-              <input id="basal-reminder" name="reminder" type="checkbox" />
-              <span>فعال شود (در این نسخه، یادآور داخل مرورگر است)</span>
-            </div>
-          </div>
-          <button class="btn btn-primary" type="submit">ثبت انسولین</button>
-        </form>
-        <p class="hint">⏰ اگر Basal + ساعت + یادآور را فعال کنی، در همان دستگاه اعلان مرورگر می‌گیری.</p>
-      </div>
-
-      <div class="card">
-        <h2>🍽️ ثبت تغذیه</h2>
-        <form id="meal-form" class="form">
-          <div class="row">
-            <label>تاریخ</label>
-            <input name="date" type="date" />
-          </div>
-          <div class="row">
-            <label>وعده</label>
-            <select name="meal">
-              <option value="Breakfast">صبحانه</option>
-              <option value="Lunch">ناهار</option>
-              <option value="Dinner">شام</option>
-              <option value="Snack">میان‌وعده</option>
-            </select>
-          </div>
-          <div class="row">
-            <label>شرح غذا</label>
-            <input name="desc" type="text" required placeholder="مثلاً نان + پنیر + چای" />
-          </div>
-          <div class="row">
-            <label>کربوهیدرات کل (گرم)</label>
-            <input name="carbs" type="number" min="0" max="300" step="1" required placeholder="مثلاً 45" />
-          </div>
-          <div class="row">
-            <label>لینک به قند ۲ ساعت بعد</label>
-            <select name="linkToSlot">
-              <option value="">—</option>
-              <option value="AfterBreakfast2h">۲ ساعت بعد صبحانه</option>
-              <option value="AfterLunch2h">۲ ساعت بعد ناهار</option>
-              <option value="AfterDinner2h">۲ ساعت بعد شام</option>
-            </select>
-          </div>
-          <button class="btn btn-primary" type="submit">ثبت وعده</button>
-        </form>
-        <p class="hint">🔗 این لینک کمک می‌کند تحلیل «اثر وعده» واقعی‌تر دیده شود.</p>
-      </div>
-    </section>
-
-    <section class="grid">
-      <div class="card span-2">
-        <h2>📊 داشبورد</h2>
-
-        <div class="kpis" id="kpi-row"></div>
-
-        <div class="dash-controls">
-          <div class="pill">
-            <span>نمایش:</span>
-            <select id="range-select">
-              <option value="day" selected>روز</option>
-              <option value="week">هفته</option>
-            </select>
-          </div>
-          <div class="pill">
-            <span>تاریخ:</span>
-            <input id="range-date" type="date" />
-          </div>
-        </div>
-
-        <div class="chart-wrap">
-          <canvas id="glucoseChart" height="110"></canvas>
-        </div>
-
-        <div class="subgrid">
-          <div class="mini">
-            <h3>🚨 رویدادهای ایمنی</h3>
-            <ul id="safety-list" class="list"></ul>
-          </div>
-          <div class="mini">
-            <h3>🍽️ تحلیل اثر وعده‌ها</h3>
-            <ul id="meal-analysis" class="list"></ul>
-          </div>
-          <div class="mini">
-            <h3>📄 گزارش خلاصه</h3>
-            <div id="summary" class="summary"></div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="card">
-        <h2>🎓 آموزش سریع</h2>
-        <div class="edu">
-          <details open>
-            <summary>هیپو (قند پایین) چه کنیم؟</summary>
-            <p>اگر قند زیر 70 است: 15 گرم قند سریع‌الاثر (مثل آبمیوه/قند/عسل) و 15 دقیقه بعد دوباره تست. اگر بهتر نشد تکرار. اگر بیهوشی/استفراغ یا عدم بهبود: کمک پزشکی فوری.</p>
-          </details>
-          <details>
-            <summary>هایپر شدید (قند خیلی بالا) چه کنیم؟</summary>
-            <p>اگر قند بالای 300 است: آب کافی، بررسی علائم، در صورت امکان بررسی کتون (طبق دستور پزشک). اگر تهوع/استفراغ/خواب‌آلودگی/تنفس غیرعادی: اورژانس.</p>
-          </details>
-          <details>
-            <summary>نکات تغذیه‌ای برای کنترل بهتر</summary>
-            <ul>
-              <li>کربوهیدرات را دقیق ثبت کن (گرم) و اثرش را با قند ۲ ساعت بعد ببین.</li>
-              <li>غذاهای چرب/پروتئینی ممکن است افزایش قند را دیرتر نشان دهند.</li>
-              <li>فیبر بیشتر + پروتئین مناسب می‌تواند نوسان را کمتر کند.</li>
-            </ul>
-          </details>
-          <p class="hint">⚠️ این اپ جایگزین پزشک نیست؛ صرفاً برای ثبت، گزارش و کمک‌تصمیم‌گیری است.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>🗂️ داده‌ها</h2>
-      <div class="tables">
-        <div>
-          <h3>قند</h3>
-          <div class="table-wrap">
-            <table id="tbl-glucose">
-              <thead><tr><th>تاریخ</th><th>حالت</th><th>قند</th><th>یادداشت</th><th></th></tr></thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </div>
-        <div>
-          <h3>انسولین</h3>
-          <div class="table-wrap">
-            <table id="tbl-insulin">
-              <thead><tr><th>تاریخ</th><th>نوع</th><th>نام</th><th>واحد</th><th>ساعت</th><th>وعده</th><th></th></tr></thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </div>
-        <div>
-          <h3>تغذیه</h3>
-          <div class="table-wrap">
-            <table id="tbl-meal">
-              <thead><tr><th>تاریخ</th><th>وعده</th><th>شرح</th><th>کربوهیدرات</th><th>لینک</th><th></th></tr></thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    ساخته شده برای MVP «دیابت‌یار» — نسخه وب (آفلاین/لوکال) 💚
-  </footer>
-
-  <script src="./app.js"></script>
-</body>
-</html>
