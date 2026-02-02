@@ -1,0 +1,3805 @@
+{
+  "profile": {
+    "patient_id": "P001",
+    "name": "نمونه-کاربر",
+    "diabetes_type": "Type 1",
+    "units": "mg/dL",
+    "targets": {
+      "low": 80,
+      "high": 180
+    },
+    "notes": "داده‌ها کاملاً نمونه/ساختگی هستند و فقط برای تست نرم‌افزار."
+  },
+  "days": [
+    {
+      "date": "2026-01-01",
+      "context": {
+        "stress": "زیاد",
+        "activity": "کم",
+        "sick": true,
+        "sleep_hours": 6.3,
+        "dawn_effect": true
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 169,
+        "after_breakfast_2h": 117,
+        "pre_lunch": 97,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 18,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نان سنگک + پنیر + چای",
+          "items_g": {
+            "نان": 90,
+            "پنیر": 30,
+            "چای": 250
+          },
+          "carbs_g": 47,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "برنج + مرغ + سالاد",
+          "items_g": {
+            "برنج پخته": 250,
+            "مرغ": 150,
+            "سالاد": 200
+          },
+          "carbs_g": 56,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "نان + کتلت",
+          "items_g": {
+            "نان": 80,
+            "کتلت": 2
+          },
+          "carbs_g": 48,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-02",
+      "context": {
+        "stress": "کم",
+        "activity": "کم",
+        "sick": false,
+        "sleep_hours": 6.6,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 118,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 17,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 9,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 2,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "اوتمیل + شیر",
+          "items_g": {
+            "جو دوسر": 50,
+            "شیر": 250
+          },
+          "carbs_g": 60,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "عدس‌پلو + ماست",
+          "items_g": {
+            "عدس‌پلو": 260,
+            "ماست": 200
+          },
+          "carbs_g": 91,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سالاد مرغ + نان کم",
+          "items_g": {
+            "سالاد مرغ": 300,
+            "نان": 40
+          },
+          "carbs_g": 22,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "بیسکویت",
+          "items_g": {
+            "بیسکویت": 30
+          },
+          "carbs_g": 28,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-03",
+      "context": {
+        "stress": "زیاد",
+        "activity": "زیاد",
+        "sick": false,
+        "sleep_hours": 7.4,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 139,
+        "after_breakfast_2h": 114,
+        "pre_lunch": 85,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 15,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 8,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "اوتمیل + شیر",
+          "items_g": {
+            "جو دوسر": 50,
+            "شیر": 250
+          },
+          "carbs_g": 65,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "قورمه‌سبزی + برنج",
+          "items_g": {
+            "قورمه‌سبزی": 250,
+            "برنج پخته": 220
+          },
+          "carbs_g": 84,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سیب‌زمینی + تخم‌مرغ",
+          "items_g": {
+            "سیب‌زمینی": 250,
+            "تخم‌مرغ": 2
+          },
+          "carbs_g": 43,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "بیسکویت",
+          "items_g": {
+            "بیسکویت": 30
+          },
+          "carbs_g": 25,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-04",
+      "context": {
+        "stress": "متوسط",
+        "activity": "زیاد",
+        "sick": false,
+        "sleep_hours": 6.2,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 114,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 13,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 11,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 7,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "خرما + نان + پنیر",
+          "items_g": {
+            "خرما": 3,
+            "نان": 60,
+            "پنیر": 25
+          },
+          "carbs_g": 47,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "برنج + مرغ + سالاد",
+          "items_g": {
+            "برنج پخته": 250,
+            "مرغ": 150,
+            "سالاد": 200
+          },
+          "carbs_g": 85,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "نان + کتلت",
+          "items_g": {
+            "نان": 80,
+            "کتلت": 2
+          },
+          "carbs_g": 62,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-05",
+      "context": {
+        "stress": "کم",
+        "activity": "متوسط",
+        "sick": false,
+        "sleep_hours": 6.9,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 132,
+        "after_breakfast_2h": 92,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 17,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 9,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 7,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نیمرو + نان + گوجه",
+          "items_g": {
+            "تخم‌مرغ": 2,
+            "نان": 70,
+            "گوجه": 150
+          },
+          "carbs_g": 40,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "برنج + مرغ + سالاد",
+          "items_g": {
+            "برنج پخته": 250,
+            "مرغ": 150,
+            "سالاد": 200
+          },
+          "carbs_g": 85,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سوپ + نان",
+          "items_g": {
+            "سوپ": 350,
+            "نان": 60
+          },
+          "carbs_g": 59,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "موز",
+          "items_g": {
+            "موز": 120
+          },
+          "carbs_g": 22,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-06",
+      "context": {
+        "stress": "کم",
+        "activity": "کم",
+        "sick": false,
+        "sleep_hours": 7.9,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 137,
+        "after_breakfast_2h": 69,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 16,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 12,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نیمرو + نان + گوجه",
+          "items_g": {
+            "تخم‌مرغ": 2,
+            "نان": 70,
+            "گوجه": 150
+          },
+          "carbs_g": 33,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "عدس‌پلو + ماست",
+          "items_g": {
+            "عدس‌پلو": 260,
+            "ماست": 200
+          },
+          "carbs_g": 108,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "نان + کتلت",
+          "items_g": {
+            "نان": 80,
+            "کتلت": 2
+          },
+          "carbs_g": 49,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 69
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-07",
+      "context": {
+        "stress": "زیاد",
+        "activity": "زیاد",
+        "sick": false,
+        "sleep_hours": 6.2,
+        "dawn_effect": true
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 144,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 15,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 7,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نان سنگک + پنیر + چای",
+          "items_g": {
+            "نان": 90,
+            "پنیر": 30,
+            "چای": 250
+          },
+          "carbs_g": 52,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "برنج + مرغ + سالاد",
+          "items_g": {
+            "برنج پخته": 250,
+            "مرغ": 150,
+            "سالاد": 200
+          },
+          "carbs_g": 73,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سوپ + نان",
+          "items_g": {
+            "سوپ": 350,
+            "نان": 60
+          },
+          "carbs_g": 53,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "موز",
+          "items_g": {
+            "موز": 120
+          },
+          "carbs_g": 31,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-08",
+      "context": {
+        "stress": "کم",
+        "activity": "متوسط",
+        "sick": false,
+        "sleep_hours": 7.9,
+        "dawn_effect": true
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 141,
+        "after_breakfast_2h": 118,
+        "pre_lunch": 88,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 18,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 2,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 7,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نیمرو + نان + گوجه",
+          "items_g": {
+            "تخم‌مرغ": 2,
+            "نان": 70,
+            "گوجه": 150
+          },
+          "carbs_g": 34,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "عدس‌پلو + ماست",
+          "items_g": {
+            "عدس‌پلو": 260,
+            "ماست": 200
+          },
+          "carbs_g": 76,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "نان + کتلت",
+          "items_g": {
+            "نان": 80,
+            "کتلت": 2
+          },
+          "carbs_g": 50,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "سیب",
+          "items_g": {
+            "سیب": 180
+          },
+          "carbs_g": 22,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-09",
+      "context": {
+        "stress": "متوسط",
+        "activity": "کم",
+        "sick": false,
+        "sleep_hours": 6.3,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 131,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 15,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 7,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "20:30"
+          }
+        ],
+        "corrections": [
+          {
+            "time": "11:30",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "reason": "Correction (نمونه)"
+          }
+        ]
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "خرما + نان + پنیر",
+          "items_g": {
+            "خرما": 3,
+            "نان": 60,
+            "پنیر": 25
+          },
+          "carbs_g": 49,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "ماکارونی + گوشت",
+          "items_g": {
+            "ماکارونی پخته": 280,
+            "گوشت": 120
+          },
+          "carbs_g": 74,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سیب‌زمینی + تخم‌مرغ",
+          "items_g": {
+            "سیب‌زمینی": 250,
+            "تخم‌مرغ": 2
+          },
+          "carbs_g": 55,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "بیسکویت",
+          "items_g": {
+            "بیسکویت": 30
+          },
+          "carbs_g": 19,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-10",
+      "context": {
+        "stress": "زیاد",
+        "activity": "کم",
+        "sick": false,
+        "sleep_hours": 7.3,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 154,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 15,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 7,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 9,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 3,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "اوتمیل + شیر",
+          "items_g": {
+            "جو دوسر": 50,
+            "شیر": 250
+          },
+          "carbs_g": 45,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "ماکارونی + گوشت",
+          "items_g": {
+            "ماکارونی پخته": 280,
+            "گوشت": 120
+          },
+          "carbs_g": 75,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سالاد مرغ + نان کم",
+          "items_g": {
+            "سالاد مرغ": 300,
+            "نان": 40
+          },
+          "carbs_g": 24,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-11",
+      "context": {
+        "stress": "متوسط",
+        "activity": "کم",
+        "sick": false,
+        "sleep_hours": 7.1,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 84,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 18,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 10,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 7,
+            "time": "20:30"
+          }
+        ],
+        "corrections": [
+          {
+            "time": "11:30",
+            "insulin_type": "Novorapid",
+            "units": 2,
+            "reason": "Correction (نمونه)"
+          }
+        ]
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نان سنگک + پنیر + چای",
+          "items_g": {
+            "نان": 90,
+            "پنیر": 30,
+            "چای": 250
+          },
+          "carbs_g": 48,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "ماکارونی + گوشت",
+          "items_g": {
+            "ماکارونی پخته": 280,
+            "گوشت": 120
+          },
+          "carbs_g": 102,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سیب‌زمینی + تخم‌مرغ",
+          "items_g": {
+            "سیب‌زمینی": 250,
+            "تخم‌مرغ": 2
+          },
+          "carbs_g": 68,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "سیب",
+          "items_g": {
+            "سیب": 180
+          },
+          "carbs_g": 28,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-12",
+      "context": {
+        "stress": "متوسط",
+        "activity": "کم",
+        "sick": false,
+        "sleep_hours": 6.3,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 127,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 14,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 7,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "خرما + نان + پنیر",
+          "items_g": {
+            "خرما": 3,
+            "نان": 60,
+            "پنیر": 25
+          },
+          "carbs_g": 59,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "برنج + مرغ + سالاد",
+          "items_g": {
+            "برنج پخته": 250,
+            "مرغ": 150,
+            "سالاد": 200
+          },
+          "carbs_g": 58,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "نان + کتلت",
+          "items_g": {
+            "نان": 80,
+            "کتلت": 2
+          },
+          "carbs_g": 59,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-13",
+      "context": {
+        "stress": "متوسط",
+        "activity": "زیاد",
+        "sick": false,
+        "sleep_hours": 8.3,
+        "dawn_effect": true
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 155,
+        "after_breakfast_2h": 95,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 17,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نیمرو + نان + گوجه",
+          "items_g": {
+            "تخم‌مرغ": 2,
+            "نان": 70,
+            "گوجه": 150
+          },
+          "carbs_g": 48,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "برنج + مرغ + سالاد",
+          "items_g": {
+            "برنج پخته": 250,
+            "مرغ": 150,
+            "سالاد": 200
+          },
+          "carbs_g": 61,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سوپ + نان",
+          "items_g": {
+            "سوپ": 350,
+            "نان": 60
+          },
+          "carbs_g": 57,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "موز",
+          "items_g": {
+            "موز": 120
+          },
+          "carbs_g": 24,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-14",
+      "context": {
+        "stress": "کم",
+        "activity": "متوسط",
+        "sick": false,
+        "sleep_hours": 7.0,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 116,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 16,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 9,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "اوتمیل + شیر",
+          "items_g": {
+            "جو دوسر": 50,
+            "شیر": 250
+          },
+          "carbs_g": 63,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "برنج + مرغ + سالاد",
+          "items_g": {
+            "برنج پخته": 250,
+            "مرغ": 150,
+            "سالاد": 200
+          },
+          "carbs_g": 86,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سوپ + نان",
+          "items_g": {
+            "سوپ": 350,
+            "نان": 60
+          },
+          "carbs_g": 36,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-15",
+      "context": {
+        "stress": "زیاد",
+        "activity": "زیاد",
+        "sick": false,
+        "sleep_hours": 7.7,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 113,
+        "after_breakfast_2h": 65,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 15,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 8,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "20:30"
+          }
+        ],
+        "corrections": [
+          {
+            "time": "11:30",
+            "insulin_type": "Novorapid",
+            "units": 3,
+            "reason": "Correction (نمونه)"
+          }
+        ]
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "اوتمیل + شیر",
+          "items_g": {
+            "جو دوسر": 50,
+            "شیر": 250
+          },
+          "carbs_g": 56,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "برنج + مرغ + سالاد",
+          "items_g": {
+            "برنج پخته": 250,
+            "مرغ": 150,
+            "سالاد": 200
+          },
+          "carbs_g": 80,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سوپ + نان",
+          "items_g": {
+            "سوپ": 350,
+            "نان": 60
+          },
+          "carbs_g": 48,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 65
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-16",
+      "context": {
+        "stress": "زیاد",
+        "activity": "زیاد",
+        "sick": false,
+        "sleep_hours": 6.8,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 151,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 16,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 8,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 10,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "20:30"
+          }
+        ],
+        "corrections": [
+          {
+            "time": "11:30",
+            "insulin_type": "Novorapid",
+            "units": 1,
+            "reason": "Correction (نمونه)"
+          }
+        ]
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "خرما + نان + پنیر",
+          "items_g": {
+            "خرما": 3,
+            "نان": 60,
+            "پنیر": 25
+          },
+          "carbs_g": 65,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "قورمه‌سبزی + برنج",
+          "items_g": {
+            "قورمه‌سبزی": 250,
+            "برنج پخته": 220
+          },
+          "carbs_g": 83,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سوپ + نان",
+          "items_g": {
+            "سوپ": 350,
+            "نان": 60
+          },
+          "carbs_g": 48,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-17",
+      "context": {
+        "stress": "زیاد",
+        "activity": "متوسط",
+        "sick": false,
+        "sleep_hours": 6.2,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 160,
+        "after_breakfast_2h": 67,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 18,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 3,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نان سنگک + پنیر + چای",
+          "items_g": {
+            "نان": 90,
+            "پنیر": 30,
+            "چای": 250
+          },
+          "carbs_g": 51,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "قورمه‌سبزی + برنج",
+          "items_g": {
+            "قورمه‌سبزی": 250,
+            "برنج پخته": 220
+          },
+          "carbs_g": 66,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سالاد مرغ + نان کم",
+          "items_g": {
+            "سالاد مرغ": 300,
+            "نان": 40
+          },
+          "carbs_g": 22,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "سیب",
+          "items_g": {
+            "سیب": 180
+          },
+          "carbs_g": 22,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 67
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-18",
+      "context": {
+        "stress": "متوسط",
+        "activity": "متوسط",
+        "sick": false,
+        "sleep_hours": 6.2,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 140,
+        "after_breakfast_2h": 64,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 15,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 8,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "خرما + نان + پنیر",
+          "items_g": {
+            "خرما": 3,
+            "نان": 60,
+            "پنیر": 25
+          },
+          "carbs_g": 61,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "ماکارونی + گوشت",
+          "items_g": {
+            "ماکارونی پخته": 280,
+            "گوشت": 120
+          },
+          "carbs_g": 83,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سوپ + نان",
+          "items_g": {
+            "سوپ": 350,
+            "نان": 60
+          },
+          "carbs_g": 38,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "سیب",
+          "items_g": {
+            "سیب": 180
+          },
+          "carbs_g": 17,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 64
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-19",
+      "context": {
+        "stress": "زیاد",
+        "activity": "متوسط",
+        "sick": false,
+        "sleep_hours": 8.3,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 154,
+        "after_breakfast_2h": 119,
+        "pre_lunch": 59,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 14,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "خرما + نان + پنیر",
+          "items_g": {
+            "خرما": 3,
+            "نان": 60,
+            "پنیر": 25
+          },
+          "carbs_g": 58,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "قورمه‌سبزی + برنج",
+          "items_g": {
+            "قورمه‌سبزی": 250,
+            "برنج پخته": 220
+          },
+          "carbs_g": 77,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سوپ + نان",
+          "items_g": {
+            "سوپ": 350,
+            "نان": 60
+          },
+          "carbs_g": 45,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "بیسکویت",
+          "items_g": {
+            "بیسکویت": 30
+          },
+          "carbs_g": 29,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 59
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "context": {
+        "stress": "متوسط",
+        "activity": "متوسط",
+        "sick": false,
+        "sleep_hours": 6.9,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 131,
+        "after_breakfast_2h": 132,
+        "pre_lunch": 75,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 17,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "20:30"
+          }
+        ],
+        "corrections": [
+          {
+            "time": "11:30",
+            "insulin_type": "Novorapid",
+            "units": 1,
+            "reason": "Correction (نمونه)"
+          }
+        ]
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "خرما + نان + پنیر",
+          "items_g": {
+            "خرما": 3,
+            "نان": 60,
+            "پنیر": 25
+          },
+          "carbs_g": 52,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "عدس‌پلو + ماست",
+          "items_g": {
+            "عدس‌پلو": 260,
+            "ماست": 200
+          },
+          "carbs_g": 80,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سیب‌زمینی + تخم‌مرغ",
+          "items_g": {
+            "سیب‌زمینی": 250,
+            "تخم‌مرغ": 2
+          },
+          "carbs_g": 51,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "context": {
+        "stress": "متوسط",
+        "activity": "زیاد",
+        "sick": false,
+        "sleep_hours": 6.6,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 106,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 17,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 10,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نیمرو + نان + گوجه",
+          "items_g": {
+            "تخم‌مرغ": 2,
+            "نان": 70,
+            "گوجه": 150
+          },
+          "carbs_g": 49,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "برنج + مرغ + سالاد",
+          "items_g": {
+            "برنج پخته": 250,
+            "مرغ": 150,
+            "سالاد": 200
+          },
+          "carbs_g": 75,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سوپ + نان",
+          "items_g": {
+            "سوپ": 350,
+            "نان": 60
+          },
+          "carbs_g": 50,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-22",
+      "context": {
+        "stress": "زیاد",
+        "activity": "متوسط",
+        "sick": false,
+        "sleep_hours": 5.7,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 104,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 14,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 8,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نان سنگک + پنیر + چای",
+          "items_g": {
+            "نان": 90,
+            "پنیر": 30,
+            "چای": 250
+          },
+          "carbs_g": 52,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "عدس‌پلو + ماست",
+          "items_g": {
+            "عدس‌پلو": 260,
+            "ماست": 200
+          },
+          "carbs_g": 74,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سوپ + نان",
+          "items_g": {
+            "سوپ": 350,
+            "نان": 60
+          },
+          "carbs_g": 52,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "context": {
+        "stress": "کم",
+        "activity": "متوسط",
+        "sick": false,
+        "sleep_hours": 6.2,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 151,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 15,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 8,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نان سنگک + پنیر + چای",
+          "items_g": {
+            "نان": 90,
+            "پنیر": 30,
+            "چای": 250
+          },
+          "carbs_g": 45,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "ماکارونی + گوشت",
+          "items_g": {
+            "ماکارونی پخته": 280,
+            "گوشت": 120
+          },
+          "carbs_g": 72,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "نان + کتلت",
+          "items_g": {
+            "نان": 80,
+            "کتلت": 2
+          },
+          "carbs_g": 52,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "بیسکویت",
+          "items_g": {
+            "بیسکویت": 30
+          },
+          "carbs_g": 33,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-24",
+      "context": {
+        "stress": "کم",
+        "activity": "متوسط",
+        "sick": false,
+        "sleep_hours": 6.4,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 109,
+        "after_breakfast_2h": 57,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 16,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 8,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "20:30"
+          }
+        ],
+        "corrections": [
+          {
+            "time": "11:30",
+            "insulin_type": "Novorapid",
+            "units": 2,
+            "reason": "Correction (نمونه)"
+          }
+        ]
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "خرما + نان + پنیر",
+          "items_g": {
+            "خرما": 3,
+            "نان": 60,
+            "پنیر": 25
+          },
+          "carbs_g": 59,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "ماکارونی + گوشت",
+          "items_g": {
+            "ماکارونی پخته": 280,
+            "گوشت": 120
+          },
+          "carbs_g": 82,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سوپ + نان",
+          "items_g": {
+            "سوپ": 350,
+            "نان": 60
+          },
+          "carbs_g": 42,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "بیسکویت",
+          "items_g": {
+            "بیسکویت": 30
+          },
+          "carbs_g": 22,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 57
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-25",
+      "context": {
+        "stress": "کم",
+        "activity": "متوسط",
+        "sick": false,
+        "sleep_hours": 5.5,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 87,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 77,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 15,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 1,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "اوتمیل + شیر",
+          "items_g": {
+            "جو دوسر": 50,
+            "شیر": 250
+          },
+          "carbs_g": 57,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "قورمه‌سبزی + برنج",
+          "items_g": {
+            "قورمه‌سبزی": 250,
+            "برنج پخته": 220
+          },
+          "carbs_g": 82,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سالاد مرغ + نان کم",
+          "items_g": {
+            "سالاد مرغ": 300,
+            "نان": 40
+          },
+          "carbs_g": 23,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "بیسکویت",
+          "items_g": {
+            "بیسکویت": 30
+          },
+          "carbs_g": 26,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-26",
+      "context": {
+        "stress": "کم",
+        "activity": "کم",
+        "sick": false,
+        "sleep_hours": 6.7,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 121,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 17,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 11,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 3,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نیمرو + نان + گوجه",
+          "items_g": {
+            "تخم‌مرغ": 2,
+            "نان": 70,
+            "گوجه": 150
+          },
+          "carbs_g": 46,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "عدس‌پلو + ماست",
+          "items_g": {
+            "عدس‌پلو": 260,
+            "ماست": 200
+          },
+          "carbs_g": 88,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سالاد مرغ + نان کم",
+          "items_g": {
+            "سالاد مرغ": 300,
+            "نان": 40
+          },
+          "carbs_g": 29,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "context": {
+        "stress": "زیاد",
+        "activity": "زیاد",
+        "sick": false,
+        "sleep_hours": 5.6,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 111,
+        "after_breakfast_2h": 67,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 14,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 7,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نان سنگک + پنیر + چای",
+          "items_g": {
+            "نان": 90,
+            "پنیر": 30,
+            "چای": 250
+          },
+          "carbs_g": 49,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "ماکارونی + گوشت",
+          "items_g": {
+            "ماکارونی پخته": 280,
+            "گوشت": 120
+          },
+          "carbs_g": 97,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "نان + کتلت",
+          "items_g": {
+            "نان": 80,
+            "کتلت": 2
+          },
+          "carbs_g": 55,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "موز",
+          "items_g": {
+            "موز": 120
+          },
+          "carbs_g": 34,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 67
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "context": {
+        "stress": "کم",
+        "activity": "زیاد",
+        "sick": true,
+        "sleep_hours": 6.8,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 144,
+        "after_breakfast_2h": 84,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 15,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 11,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 8,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "اوتمیل + شیر",
+          "items_g": {
+            "جو دوسر": 50,
+            "شیر": 250
+          },
+          "carbs_g": 41,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "قورمه‌سبزی + برنج",
+          "items_g": {
+            "قورمه‌سبزی": 250,
+            "برنج پخته": 220
+          },
+          "carbs_g": 94,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سیب‌زمینی + تخم‌مرغ",
+          "items_g": {
+            "سیب‌زمینی": 250,
+            "تخم‌مرغ": 2
+          },
+          "carbs_g": 70,
+          "linked_glucose": "after_dinner_2h"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-29",
+      "context": {
+        "stress": "زیاد",
+        "activity": "کم",
+        "sick": false,
+        "sleep_hours": 6.5,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 120,
+        "after_breakfast_2h": 101,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 15,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 3,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 4,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نان سنگک + پنیر + چای",
+          "items_g": {
+            "نان": 90,
+            "پنیر": 30,
+            "چای": 250
+          },
+          "carbs_g": 44,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "ماکارونی + گوشت",
+          "items_g": {
+            "ماکارونی پخته": 280,
+            "گوشت": 120
+          },
+          "carbs_g": 75,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سیب‌زمینی + تخم‌مرغ",
+          "items_g": {
+            "سیب‌زمینی": 250,
+            "تخم‌مرغ": 2
+          },
+          "carbs_g": 69,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "سیب",
+          "items_g": {
+            "سیب": 180
+          },
+          "carbs_g": 25,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "date": "2026-01-30",
+      "context": {
+        "stress": "زیاد",
+        "activity": "زیاد",
+        "sick": false,
+        "sleep_hours": 7.6,
+        "dawn_effect": false
+      },
+      "targets": {
+        "low": 80,
+        "high": 180
+      },
+      "glucose_readings": {
+        "FBS": 92,
+        "after_breakfast_2h": 55,
+        "pre_lunch": 55,
+        "after_lunch_2h": 55,
+        "pre_dinner": 55,
+        "after_dinner_2h": 55,
+        "bedtime": 55
+      },
+      "insulin": {
+        "basal": [
+          {
+            "insulin_type": "Lantus",
+            "units": 16,
+            "time": "22:00"
+          }
+        ],
+        "bolus": [
+          {
+            "meal": "صبحانه",
+            "insulin_type": "Novorapid",
+            "units": 5,
+            "time": "08:00"
+          },
+          {
+            "meal": "ناهار",
+            "insulin_type": "Novorapid",
+            "units": 7,
+            "time": "13:30"
+          },
+          {
+            "meal": "شام",
+            "insulin_type": "Novorapid",
+            "units": 6,
+            "time": "20:30"
+          }
+        ],
+        "corrections": []
+      },
+      "meals": [
+        {
+          "meal": "صبحانه",
+          "time": "08:00",
+          "description": "نان سنگک + پنیر + چای",
+          "items_g": {
+            "نان": 90,
+            "پنیر": 30,
+            "چای": 250
+          },
+          "carbs_g": 46,
+          "linked_glucose": "after_breakfast_2h"
+        },
+        {
+          "meal": "ناهار",
+          "time": "13:30",
+          "description": "برنج + مرغ + سالاد",
+          "items_g": {
+            "برنج پخته": 250,
+            "مرغ": 150,
+            "سالاد": 200
+          },
+          "carbs_g": 63,
+          "linked_glucose": "after_lunch_2h"
+        },
+        {
+          "meal": "شام",
+          "time": "20:30",
+          "description": "سیب‌زمینی + تخم‌مرغ",
+          "items_g": {
+            "سیب‌زمینی": 250,
+            "تخم‌مرغ": 2
+          },
+          "carbs_g": 51,
+          "linked_glucose": "after_dinner_2h"
+        },
+        {
+          "meal": "میان‌وعده",
+          "time": "16:30",
+          "description": "موز",
+          "items_g": {
+            "موز": 120
+          },
+          "carbs_g": 27,
+          "linked_glucose": null
+        }
+      ],
+      "alerts": [
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد صبحانه",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد ناهار",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "۲ساعت بعد شام",
+          "value": 55
+        },
+        {
+          "type": "hypo",
+          "reading": "قبل خواب",
+          "value": 55
+        }
+      ]
+    }
+  ],
+  "analysis": {
+    "summary": {
+      "days": 30,
+      "time_in_range_ratio": 0.2,
+      "hypo_readings_count": 166,
+      "severe_hyper_readings_count": 0,
+      "avg_glucose": 69,
+      "avg_carb_g": {
+        "breakfast": 50.7,
+        "lunch": 79.5,
+        "dinner": 47.7
+      }
+    },
+    "note_safety": "این بخش فقط برای تست نرم‌افزار و تحلیل توصیفی است و توصیه درمانی/دوزدهی نیست."
+  }
+}
